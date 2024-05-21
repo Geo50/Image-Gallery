@@ -1,0 +1,89 @@
+:root {
+  --grey: #d2d1d1;
+  --white: #ffffff;
+  --navy_blue: #5ea0c9;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+body {
+  background-image: url("https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-6016x3384-8324.png");
+  font-family: "Rubik", sans-serif;
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+section {
+  margin: 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+button {
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+#Germany:hover {
+  background-image: linear-gradient(black, red, gold);
+}
+
+#Norway:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(124, 13, 13),
+    rgba(19, 19, 177, 0.37)
+  );
+}
+
+#Greece:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 140, 255),
+    rgb(255, 255, 255)
+  );
+}
+
+#Italy:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(30, 125, 4),
+    rgb(255, 255, 255),
+    rgb(234, 3, 3)
+  );
+}
+
+.img {
+  width: 18rem;
+  height: 12rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: ease 1s;
+}
+
+.img:hover {
+  transform: scale(1.25);
+}
+
+.gr.it.nor.ger {
+  display: flex;
+}
+
+@media (max-width: 400px) {
+  .img {
+    width: 10rem;
+    height: 6rem;
+  }
+}
